@@ -60,7 +60,8 @@ angular.module('mgo-angular-wizard').directive('wizard', function() {
             onFinish: '&',
             hideIndicators: '=',
             editMode: '=',
-            name: '@'
+            name: '@',
+            title: '@'
         },
         templateUrl: function(element, attributes) {
             return attributes.template || "wizard.html";
